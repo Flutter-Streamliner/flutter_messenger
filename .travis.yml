@@ -5,7 +5,7 @@ addons:
     packages:
       - lib32stdc++6
 install:
-  - git clone https://github.com/Flutter-Streamliner/flutter_messenger.git -b stable --depth 1
+  - git clone https://github.com/Flutter-Streamliner/flutter_messenger.git
   - export PATH="$PATH:/Users/tigermei/flutter/bin"
   - flutter doctor
   - flutter --version
