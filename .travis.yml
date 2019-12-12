@@ -1,0 +1,18 @@
+language: dart
+dist: osx
+addons:
+  apt:
+    packages:
+      - lib32stdc++6
+install:
+  - git clone https://github.com/Flutter-Streamliner/flutter_messenger.git -b stable --depth 1
+  - export PATH="$PATH:/Users/tigermei/flutter/bin"
+  - flutter doctor
+  - flutter --version
+script:
+  - flutter packages get
+  - flutter analyze --no-pub --no-current-package lib/ test/
+  - flutter test --no-pub test/
+cache:
+  directories:
+    - $HOME/.pub-cache
