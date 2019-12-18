@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_messenger/pages/conversation_page_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,7 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: Text('Hello world')
+        child: ConversationPageList(),
       ),
     );
   }
